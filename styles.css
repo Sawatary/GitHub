@@ -1,0 +1,84 @@
+body {
+    font-family: "Kanit", sans-serif;
+    background-color: #8756ff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1{
+    margin-right: 50px;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+}
+
+input{
+    font-family: "Kanit", sans-serif;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.autocomplete-items {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+.autocomplete-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+}
+
+.autocomplete-item:hover {
+    background-color: #4dd0e1;
+}
+
+#repo-list {
+    margin-top: 80px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.repo-item {
+    border-radius: 10px;
+    background-color: #8756ff;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.repo-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-repo {
+    background-color: transparent;
+    border: none;
+    color: #ff002f;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.remove-repo:hover {
+    transform: scale(1.1);
+}
